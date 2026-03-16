@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #E6E7EE;
+  --accent: #5B6EF5;
+  --secondary: #7C3AED;
+  --shadow: #C8C8C8;
+  --highlight: #FFFFFF;
+  --text: #1F2937;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #E6E7EE;
+  color: #1F2937;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+@layer components {
+  .neu-card {
+    @apply bg-[#E6E7EE] rounded-[20px];
+    box-shadow: 8px 8px 16px #C8C8C8, -8px -8px 16px #FFFFFF;
+  }
+  
+  .neu-raised {
+    background: #E6E7EE;
+    box-shadow: 6px 6px 12px #C8C8C8, -6px -6px 12px #FFFFFF;
+    border-radius: 12px;
+  }
+  
+  .neu-inset {
+    background: #E6E7EE;
+    box-shadow: inset 4px 4px 8px #C8C8C8, inset -4px -4px 8px #FFFFFF;
+    border-radius: 12px;
+  }
+  
+  .neu-hover {
+    transition: all 0.3s ease;
+  }
+  
+  .neu-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 12px 12px 24px #C8C8C8, -12px -12px 24px #FFFFFF;
+  }
+}
