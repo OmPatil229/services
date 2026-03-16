@@ -9,10 +9,11 @@ const navLinks = [
   { name: "Contact", href: "#contact" },
 ];
 
+// TODO: Replace with your actual profile URLs
 const socialLinks = [
-  { icon: Github, href: "https://github.com", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
+  { icon: Github, href: "https://github.com/ompatil", label: "GitHub" },
+  { icon: Linkedin, href: "https://linkedin.com/in/ompatil", label: "LinkedIn" },
+  { icon: Twitter, href: "https://twitter.com/ompatil", label: "Twitter" },
 ];
 
 export default function Footer() {
@@ -80,6 +81,7 @@ export default function Footer() {
                 <Phone size={16} className="text-[#5B6EF5]" />
                 +91 9510252517
               </a>
+              {/* TODO: Replace with your actual email address */}
               <a
                 href="mailto:om@example.com"
                 className="flex items-center gap-3 text-sm text-[#1F2937]/60 hover:text-[#5B6EF5] transition-colors"
